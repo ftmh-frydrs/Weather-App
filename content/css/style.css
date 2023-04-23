@@ -1,3 +1,6 @@
 .color{
-background-image: linear-gradient(to right top, #e790c1, #dd9ad2, #d0a4e1, #c2aeeb, #b5b7f2, #a6c0fa, #97cafe, #8bd2ff, #76ddff, #63e8ff, #59f2fc, #5ffbf1);
+/* background-image: linear-gradient(to right top, #e790c1, #dd9ad2, #d0a4e1, #c2aeeb, #b5b7f2, #a6c0fa, #97cafe, #8bd2ff, #76ddff, #63e8ff, #59f2fc, #5ffbf1); */
+/* background-image: linear-gradient(to right top, #1d3860, #006999, #009ba4, #00c978, #a8eb12); */
+/* background-image: linear-gradient(to right top, #8fb7f2, #6a87c0, #485a90, #273162, #070937); */
+background-image: linear-gradient(to right top, #3e9fe9, #5babec, #73b7ee, #8ac3f1, #a0cff3, #9cc8ec, #97c2e4, #93bbdd, #75a0cb, #5985b9, #406aa6, #295092);
 }

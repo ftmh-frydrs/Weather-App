@@ -7,26 +7,36 @@ const iconEl = document.querySelector(".icon");
 
 async function AppWeather(city){
      const response = await fetch (apiUrl+ city +`&appid=${apiKey}`);
-     var data = await response.json();
-     console.log(data);
+    
+     if(response.status == 404){
+       document.querySelector(".err").style.display = "block"
+       document.querySelector(".App").style.display="none"
+     }else{
+        var data = await response.json();
+
+   //   console.log(data);
      document.querySelector(".city").innerHTML = data.name;
      document.querySelector(".temp").innerHTML = Math.round(data.main.temp) +"°C";
      document.querySelector(".humidity").innerHTML = data.main.humidity +"%";
      document.querySelector(".wind").innerHTML = data.wind.speed +" Km/h" ;   
      
      if(data.weather[0].main == "Clear"){
-     iconEl.src="./content/img/clear.png"
-  }else if(data.weather[0].main == "Clouds"){
-     iconEl.src="./content/img/clouds.png"
-  }else if(data.weather[0].main == "Rain"){
-     iconEl.src="./content/img/rain.png"
-  }else if(data.weather[0].main == "Drizzle"){
-     iconEl.src="./content/img/drizzle.png"
-  }else if(data.weather[0].main == "Mist"){
-     iconEl.src="./content/img/mist.png"
-  }
+            iconEl.src="./content/img/clear.png"
+          }else if(data.weather[0].main == "Clouds"){
+            iconEl.src="./content/img/clouds.png"
+          }else if(data.weather[0].main == "Rain"){
+            iconEl.src="./content/img/rain.png"
+          }else if(data.weather[0].main == "Drizzle"){
+          iconEl.src="./content/img/drizzle.png"
+          }else if(data.weather[0].main == "Mist"){
+            iconEl.src="./content/img/mist.png"
+          }
 
-  document.querySelector(".hidden").style.display="block"
+   document.querySelector(".App").style.display="block"
+   document.querySelector(".err").style.display = "none"
+   
+     }
+      
 }
 
 btnEl.addEventListener("click", ()=>{
