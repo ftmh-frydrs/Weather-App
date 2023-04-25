@@ -1,6 +1,22 @@
-.color{
-/* background-image: linear-gradient(to right top, #e790c1, #dd9ad2, #d0a4e1, #c2aeeb, #b5b7f2, #a6c0fa, #97cafe, #8bd2ff, #76ddff, #63e8ff, #59f2fc, #5ffbf1); */
-/* background-image: linear-gradient(to right top, #1d3860, #006999, #009ba4, #00c978, #a8eb12); */
-/* background-image: linear-gradient(to right top, #8fb7f2, #6a87c0, #485a90, #273162, #070937); */
-background-image: linear-gradient(to right top, #3e9fe9, #5babec, #73b7ee, #8ac3f1, #a0cff3, #9cc8ec, #97c2e4, #93bbdd, #75a0cb, #5985b9, #406aa6, #295092);
+
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+}
+
+
+body {
+    background-image: linear-gradient(to right top, #3e9fe9, #5babec, #73b7ee, #8ac3f1, #a0cff3, #9cc8ec, #97c2e4, #93bbdd, #75a0cb, #5985b9, #406aa6, #295092);
+    /* background-image: url(../img/vintage-913889_1920.jpg);*/
+    /* background-image: linear-gradient(to right top, #e68ee6, #ff80b0, #ff9365, #ffc004, #a8eb12); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
 }
